@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // @ts-ignore
-import App from './View/App.tsx';
+import Login from './View/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root')as HTMLElement) ;
 root.render(
   <React.StrictMode>
-    <App />
+    <Login />
   </React.StrictMode>
 );
 

@@ -29,6 +29,12 @@ body {
         color: #fff;
         text-align: center;
     }
+    .create-text{
+        top: -20px;
+            left: 0;
+            color: #fff;
+            font-size: 14px;
+    }
     .user-box {
         position: relative;
         
@@ -42,6 +48,12 @@ body {
             border-bottom: 1px solid #fff;
             outline: none;
             background: transparent;
+        }
+        span{
+            position: relative;
+            bottom: 20px;
+            color: rgb(184, 30, 30);
+            font-size: 15px;
         }
         label {
             position: absolute;

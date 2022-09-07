@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import ListItems from "./ListItem.tsx";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import "./App.scss";
+import "../Style/App.scss";
 import moment from "moment";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -39,9 +39,11 @@ function App() {
       selectedDate: moment(selectedDate).format("DD/MM/YYYY"),
       status,
     };
+
     setTaskName("");
     setTaskDescription("");
     setSelectedDate(null);
+    
     const dataToDoList = [...tasks, dataValue];
     localStorage.setItem("tasks", JSON.stringify(dataToDoList));
     setTasks(dataToDoList);
